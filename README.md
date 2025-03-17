@@ -2,7 +2,7 @@
 
 Welcome to **Recipe Finder**, a web application built with **Nuxt 3** that allows users to search for recipes based on title and the list of ingredients. This README will guide you through the setup, development, and deployment processes.
 
-![Recipe Finder Screenshot](public/images/recipe3.png)
+![Recipe Finder Screenshot](public/home.png)
 
 ## Table of Contents
 
