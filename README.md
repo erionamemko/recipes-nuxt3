@@ -7,11 +7,11 @@ Welcome to **Recipe Finder**, a web application built with **Nuxt 3** that allow
 ## Table of Contents
 
 - [Overview](#overview)
+- [Tools & Libraries Used](#tools--libraries-used)
 - [Setup](#setup)
 - [Development Server](#development-server)
 - [Production](#production)
 - [Linting and Formatting](#linting-and-formatting)
-- [Testing](#testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
@@ -19,6 +19,22 @@ Welcome to **Recipe Finder**, a web application built with **Nuxt 3** that allow
 ## Overview
 
 **Recipe Finder** is designed to help users discover. The application uses an intuitive interface and a fast search engine to provide relevant results quickly. Built with **Nuxt 3**, it leverages Vue.js, server-side rendering (SSR). The application is responsive and works on all devices.
+
+### 🔹 **Core Dependencies**
+
+- [**Nuxt 3**](https://nuxt.com/) - The heart of the project, a powerful Vue-based framework.
+- [**Pinia**](https://pinia.vuejs.org/) - State management library for Vue.js.
+- [**@nuxt/image**](https://image.nuxt.com/) - Optimized image handling for better performance.
+- [**@nuxt/ui**](https://ui.nuxt.com/) - A set of UI components for faster development.
+- [**@nuxt/icon**](https://icon.nuxt.com/) - Easily manage icons in your Nuxt app.
+- [**@nuxtjs/google-fonts**](https://google-fonts.nuxtjs.org/) - Simplifies the integration of Google Fonts.
+
+### 🔹 **Development & Linting**
+
+- [**ESLint**](https://eslint.org/) - Linting tool to enforce code quality.
+- [**@nuxt/eslint-config**](https://github.com/nuxt/eslint-config) - Nuxt-specific ESLint rules.
+- [**Sass Embedded**](https://sass-lang.com/) - Used for styling with SCSS.
+- [**@iconify-json/mdi**](https://iconify.design/) - Material Design Icons for UI enhancements.
 
 ## Setup
 
