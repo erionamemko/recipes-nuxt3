@@ -1,0 +1,143 @@
+.recipe-details {
+    @apply flex flex-col w-full container py-8 mx-auto px-4;
+
+    &__header {
+        @apply flex flex-col mb-8;
+    }
+
+    &__title {
+        @apply text-4xl md:text-5xl mb-4 font-semibold text-primary-800;
+    }
+
+    &__meta {
+        @apply flex flex-wrap gap-4 text-lg md:text-xl mb-8;
+    }
+
+    &__stat {
+        @apply flex items-center gap-2 bg-primary-50 px-3 py-1 rounded-full;
+
+        &-icon {
+            @apply text-primary-600 text-xl;
+        }
+    }
+
+    &__favorite {
+        @apply flex items-center justify-end ml-auto;
+
+        &-btn {
+            @apply transition-colors;
+        }
+
+        &-icon {
+            @apply text-red-500 text-4xl;
+        }
+    }
+
+    &__divider {
+        @apply border-primary-200;
+    }
+
+    &__image-container {
+        @apply relative mb-12 overflow-hidden rounded-xl shadow-lg;
+    }
+
+    &__image {
+        @apply w-full max-h-[500px] object-cover transition-transform duration-700;
+
+        .group:hover & {
+            @apply scale-105;
+        }
+    }
+
+    &__image-overlay {
+        @apply absolute inset-0 bg-gradient-to-t from-black/30 to-transparent;
+    }
+
+    &__image-hover {
+        @apply absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 transition-opacity duration-300;
+
+        .group:hover & {
+            @apply opacity-100;
+        }
+    }
+
+    &__ingredients {
+        @apply mb-10 bg-primary-50 p-6 rounded-lg;
+    }
+
+    &__section-title {
+        @apply text-2xl md:text-3xl font-semibold mb-6 text-primary-800 flex items-center;
+    }
+
+    &__section-icon {
+        @apply mr-2 text-primary-600;
+    }
+
+    &__ingredients-list {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-3 text-lg;
+    }
+
+    &__ingredient {
+        @apply transition-all duration-200 hover:bg-primary-100 p-2 rounded;
+
+        &-label {
+            @apply flex gap-3 items-center cursor-pointer;
+        }
+
+        &-checkbox {
+            @apply hidden;
+        }
+
+        &-check {
+            @apply relative w-6 h-6 rounded-full border-2 border-primary-600 flex items-center justify-center transition-all duration-200;
+        }
+
+        &-text {
+            @apply transition-all duration-200;
+        }
+    }
+
+    /* Stili per gli stati peer */
+    :deep(.peer:checked)~.recipe-details__ingredient-check {
+        &::after {
+            @apply absolute w-4 h-4 bg-primary-600 rounded-full;
+            content: '';
+        }
+    }
+
+    :deep(.peer:checked)~.recipe-details__ingredient-text {
+        @apply line-through text-gray-500;
+    }
+
+    &__instructions {
+        @apply mb-8;
+    }
+
+    &__instructions-list {
+        @apply flex flex-col text-lg gap-5;
+    }
+
+    &__instruction {
+        @apply flex gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200;
+
+        &-number {
+            @apply flex items-center justify-center bg-primary-600 min-w-8 h-8 rounded-full text-white text-sm font-medium;
+        }
+
+        &-text {
+            @apply flex-1;
+        }
+    }
+
+    &__back {
+        @apply mt-8 flex justify-center;
+
+        &-btn {
+            @apply bg-primary-600 hover:bg-primary-700;
+        }
+
+        &-icon {
+            @apply mr-2;
+        }
+    }
+}

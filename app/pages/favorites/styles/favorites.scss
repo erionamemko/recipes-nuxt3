@@ -1,0 +1,41 @@
+.favorites {
+    &__section {
+        @apply py-20 container mx-auto px-4;
+    }
+
+    &__header {
+        @apply text-center mb-10;
+    }
+
+    &__title {
+        @apply text-3xl lg:text-5xl font-bold mb-4 text-primary-700;
+    }
+
+    &__divider {
+        @apply w-20 h-1 bg-primary-500 mx-auto mb-6;
+    }
+
+    &__grid {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10;
+    }
+
+    &__card {
+        @apply transform transition-transform hover:scale-105;
+    }
+
+    &__empty {
+        @apply text-center py-16 bg-gray-50 rounded-lg shadow-sm;
+
+        &-icon {
+            @apply text-4xl text-gray-300 mb-4;
+        }
+
+        &-text {
+            @apply text-xl text-gray-600;
+        }
+
+        &-link {
+            @apply mt-6 inline-block px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+  {
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "nuxt.isNuxtApp": false,
+    "javascript.validate.enable": true,
+    "eslint.debug": true,
+    "eslint.useFlatConfig": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never",
+      "source.fixAll": "always",
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "always"
+    },
+    "scss.lint.unknownAtRules": "ignore",
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "vue",
+      "html",
+      "markdown",
+      "json",
+      "jsonc",
+      "yaml",
+      "toml"
+    ],
+    "cSpell.enabledFileTypes": {
+      "vue": true
+    },
+    "cSpell.words": [
+      "Nuxt",
+      "nuxtjs"
+    ],
+  }

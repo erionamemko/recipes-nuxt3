@@ -1,0 +1,27 @@
+.recipe-filters {
+    @apply flex flex-col sm:flex-row flex-wrap justify-center gap-4;
+
+    &__select-container {
+        @apply flex items-center bg-white px-4 py-2 rounded-full shadow-sm w-full sm:w-auto;
+    }
+
+    &__label {
+        @apply mr-2 text-primary-700 font-medium;
+    }
+
+    &__select {
+        @apply bg-transparent outline-none text-gray-700 flex-1;
+    }
+
+    &__buttons {
+        @apply flex gap-2 w-full sm:w-auto mt-2 sm:mt-0;
+    }
+
+    &__apply-btn {
+        @apply bg-primary-600 text-white px-4 py-1.5 rounded-full hover:bg-primary-700 transition-colors shadow-sm flex items-center gap-1 flex-1 sm:flex-none justify-center text-sm;
+    }
+
+    &__reset-btn {
+        @apply bg-white text-primary-600 border border-primary-600 px-4 py-1.5 rounded-full hover:bg-primary-50 transition-colors shadow-sm flex items-center gap-1 flex-1 sm:flex-none justify-center text-sm;
+    }
+}

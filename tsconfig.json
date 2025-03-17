@@ -1,0 +1,38 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@composables": [
+        "./app/composables"
+      ],
+      "@composables/*": [
+        "./app/composables/*"
+      ],
+      "@services": [
+        "./app/services"
+      ],
+      "@services/*": [
+        "./app/services/*"
+      ],
+      "@types": [
+        "./types"
+      ],
+      "@types/*": [
+        "./types/*"
+      ],
+      "@utils": [
+        "./app/utils"
+      ],
+      "@utils/*": [
+        "./app/utils/*"
+      ],
+      "@assets": [
+        "./app/assets"
+      ],
+      "@assets/*": [
+        "./app/assets/*"
+      ]
+    }
+  }
+}

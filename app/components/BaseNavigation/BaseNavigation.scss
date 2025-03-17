@@ -1,0 +1,31 @@
+.base-nav {
+    @apply py-4 border-b shadow-sm bg-white sticky top-0 z-10;
+
+    &__container {
+        @apply flex container items-center justify-between;
+    }
+
+    &__logo {
+        @apply flex gap-2 items-center transition-transform hover:scale-105;
+
+        &-img {
+            @apply rounded-full shadow-sm;
+        }
+
+        &-text {
+            @apply text-3xl font-bold text-primary-600 hidden sm:block;
+        }
+    }
+
+    &__menu {
+        @apply flex items-center gap-8 text-lg font-semibold capitalize;
+    }
+
+    &__link {
+        @apply px-3 py-2 hover:text-primary-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary-600 after:transition-all hover:after:w-full flex items-center gap-2;
+
+        &-icon {
+            @apply text-primary-500;
+        }
+    }
+}

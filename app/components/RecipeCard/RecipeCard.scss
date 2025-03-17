@@ -1,0 +1,59 @@
+.recipe-card {
+    @apply flex flex-col shadow rounded-md relative hover:shadow-lg transition-all duration-300 cursor-pointer;
+
+    &__image-container {
+        @apply relative overflow-hidden rounded-t-md;
+    }
+
+    &__image-wrapper {
+        @apply relative;
+    }
+
+    &__image {
+        @apply w-full h-40 object-cover transition-transform duration-700;
+
+        .group:hover & {
+            @apply scale-105;
+        }
+    }
+
+    &__image-overlay {
+        @apply absolute inset-0 bg-black/0 flex items-center justify-center opacity-0 transition-all duration-300;
+
+        .group:hover & {
+            @apply bg-black/40 opacity-100;
+        }
+    }
+
+    &__view-text {
+        @apply text-white font-medium;
+    }
+
+    &__favorite-btn {
+        @apply absolute top-2 right-2 bg-transparent border-none cursor-pointer;
+    }
+
+    &__favorite-icon {
+        @apply text-red-500 text-4xl;
+    }
+
+    &__content {
+        @apply flex flex-col py-6 px-4 flex-1;
+    }
+
+    &__title {
+        @apply text-xl lg:text-2xl font-semibold mb-2;
+    }
+
+    &__stats {
+        @apply font-normal w-full bg-white/80 flex gap-8 text-lg lg:text-xl mb-4 mt-auto;
+    }
+
+    &__stat {
+        @apply flex items-center gap-1;
+    }
+
+    &__stat-icon {
+        @apply text-primary-500;
+    }
+}
