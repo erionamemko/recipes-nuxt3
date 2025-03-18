@@ -28,6 +28,7 @@ Welcome to **Recipe Finder**, a web application built with **Nuxt 3** that allow
 - [**@nuxt/ui**](https://ui.nuxt.com/) - A set of UI components for faster development.
 - [**@nuxt/icon**](https://icon.nuxt.com/) - Easily manage icons in your Nuxt app.
 - [**@nuxtjs/google-fonts**](https://google-fonts.nuxtjs.org/) - Simplifies the integration of Google Fonts.
+- [**Tailwind CSS**](https://tailwindcss.com/) - Utility-first CSS framework for rapid UI development.
 
 ### 🔹 **Development & Linting**
 
