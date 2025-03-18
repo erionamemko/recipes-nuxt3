@@ -1,17 +1,3 @@
-<script setup lang="ts">
-import type { DropdownItem } from "#ui/types";
-
-const items: DropdownItem[][] = [
-    [
-        {
-            label: "io",
-            slot: "account",
-            disabled: true,
-        },
-    ],
-];
-</script>
-
 <template>
     <header class="base-nav">
         <nav class="base-nav__container">
